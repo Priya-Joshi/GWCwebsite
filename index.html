@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Map Showcase</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e6f6; /* Soft Pink Background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #ff99c8; /* Light Pink */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar a {
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ff6699; /* Darker Pink */
+        }
+
+        .navbar .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        /* Main Content */
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Map Container */
+        .map-container {
+            margin: auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 5px solid #ffccff; /* Pink Border */
+        }
+
+        /* Content Sections */
+        .content-section {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #ff66cc; /* Pink Text */
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #ff66cc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar a {
+                display: block;
+                text-align: center;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">Map Showcase</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#Sources">Sources</a>
+        <a href="#Scholarships">Scholarships</a>
+    </div>
+</div>
+
+<div class="main" id="home">
+    <div class="map-container">
+        <!-- Your Datawrapper Embed Code -->
+        <iframe title="Woman's Stem Education Around the World (Copy)" aria-label="Map" id="datawrapper-chart-dRn9s" src="https://datawrapper.dwcdn.net/dRn9s/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="367"></iframe>
+        <script type="text/javascript">
+            /* Datawrapper embed script */
+            !function() {
+                "use strict";
+                window.addEventListener("message", function(a) {
+                    if (void 0 !== a.data["datawrapper-height"]) {
+                        var e = document.querySelectorAll("iframe");
+                        for (var t in a.data["datawrapper-height"]) {
+                            for (var r = 0; r < e.length; r++) {
+                                if (e[r].contentWindow === a.source) {
+                                    var i = a.data["datawrapper-height"][t] + "px";
+                                    e[r].style.height = i;
+                                }
+                            }
+                        }
+                    }
+                })
+            }();
+        </script>
+    </div>
+
+    <div class="content-section" id="about">
+        <h2>About This Map</h2>
+        <p> My interactive map provides an insightful exploration into the global landscape of women's involvement in STEM (Science, Technology, Engineering, and Mathematics) fields. By hovering over different countries, I showcase the percentage of women holding STEM degrees, offering a revealing glimpse into gender representation in these vital sectors. I aim to spark conversations about progress and challenges in achieving gender equality in STEM around the world, highlighting both geographical variations and broader trends. My map is not just an informational tool, but a catalyst for deeper understanding and discussion about women's roles in science and technology globally.
+			The information presented in the map range from 2012 - 2023.
+		</p>
+    </div>
+
+	<div class="content-section" id="Sources">
+		<h2>Sources</h2>
+		<ul>
+			<li><a href="https://uploads.mwp.mprod.getusinfo.com/uploads/sites/62/2023/03/WOMEN-IN-STEM-Infographic-USAID-ASEAN.pdf">Source 1</a></li>
+			<li><a href="https://genderdata.worldbank.org/indicators/se-ter-grad-fe-zs/?fieldOfStudy=Science%2C%20Technology%2C%20Engineering%20and%20Mathematics%20%28STEM%29">Source 2</a></li>
+			<li><a href="https://www.sciencedirect.com/science/article/pii/S2405896322030956">Source 3</a></li>
+			<li><a href="https://nepal.communitere.org/smart-cheli-spreading-stem-education-for-nepali-girls/">Source 4</a></li>
+			<li><a href="https://www.researchgate.net/publication/237616591_Engineering_Education_for_Women_in_Botswana">Source 5</a></li>
+			<li><a href="https://www.timeshighereducation.com/sites/default/files/the_gender_equality_report_part_1.pdf">Source 6</a></li>
+			<li><a href="http://data.uis.unesco.org/#">Source 7</a></li>
+		</ul>
+	</div>
+	
+	
+
+			<div class="content-section" id="Scholarships"> <!-- The ID here should match the href in the navbar -->
+				<h2>Scholarship Opportunities</h2>
+				<p><a href="https://anitab.org/awards-grants/" target="_blank"> Anita B Scholarships</a></p>
+				<p><a href="https://www.profellow.com/fellowship/aauw-selected-professions-fellowships/" target="_blank"> AAUW Selected Professions Fellowships</a></p>
+				<p><a href=" https://www.studenthub.ug/news/519/waaw-foundation-scholarship-for-female-university-stem--students-" target="_blank"> WAAW Foundation Scholarship for Female University STEM Students </a></p>
+				<p><a href="https://www.hyundainews.com/en-us/releases/3782" target="_blank"> Hyundai Launches Annual Women in STEM Scholarship </a></p>   
+				<p><a href="https://thebhwgroup.com/scholarship" target="_blank"> BHW Scholarship </a></p>
+				<!-- Add more scholarship links as needed -->
+			</div>
+						
+
+						
+           
+
+				   
+		
+			
+
+
